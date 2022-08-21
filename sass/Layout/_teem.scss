@@ -1,0 +1,74 @@
+.teem {
+
+    position: relative;
+    background-color: #dcd1f3;
+
+    // padding-top: 130px;
+    .row {
+        border-radius: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.5s;
+            border: transparent;
+            &:hover {
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            }
+
+            .card-teem{
+                text-align: center;
+                padding: 40px 5px;
+            }
+
+            .teem-title {
+                font-size: .75rem;
+                margin-bottom: 0.7em;
+                color: #b61984;
+            }
+
+            .teem-text {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #181818;
+                padding: 2px 0;
+            }
+
+            .teem-text-2 {
+                font-size: 13px;
+                font-weight: 500;
+                color: #181818;
+                padding: 6px 0;
+            }
+
+            img {
+                border-radius: 10px;
+            }
+
+
+        }
+
+
+    }
+
+    .teemimg {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        pointer-events: none;
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+    }
+
+
+}

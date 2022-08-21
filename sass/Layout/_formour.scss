@@ -1,0 +1,139 @@
+.find-couse {
+    margin-top: 130px;
+    position: relative;
+
+    .container {
+        width: 70%;
+        height: auto;
+    }
+
+    .img-findEnd {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+.find-content {
+    z-index: 100;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 30px
+}
+
+.find-img img {
+    margin-top: 30px;
+    display: block;
+    margin-left: 50px;
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: 99999;
+}
+
+.form-dad {
+    padding: 10px 20px;
+}
+
+.form-find {
+    z-index: 9999;
+    margin-left: 70px;
+    width: 80%;
+    padding: 40px 0 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
+    background-color: $color-white-1;
+    border-radius: $bd-2;
+
+    h1 {
+        @include styleText($fs-5, $fw-3, $color-dark-1);
+        padding: 30px 0;
+    }
+
+    .btn-pink {
+        margin-top: 40px;
+    }
+}
+
+.input-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    padding: 20px 0;
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: $radius-1;
+        padding: 9px 18px;
+        width: 42%;
+        margin-right: 20px;
+        border: 1px solid black;
+
+        input {
+            border: transparent;
+            width: 100%;
+        }
+
+        span {
+            color: $color-pink-1;
+            padding-right: 6px;
+        }
+    }
+}
+
+.input-english {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: $radius-1;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid black;
+
+    span {
+        color: $color-pink-1;
+    }
+
+    .select {
+        width: 100%;
+
+        select {
+            border: transparent;
+            width: 100%;
+        }
+    }
+}
+
+.input-mess {
+    display: flex;
+    flex-direction: row;
+    border-radius: $radius-1;
+    padding: 8px 16px;
+    width: 90%;
+    border: 1px solid black;
+
+    span {
+        padding-top: 5px;
+        padding-left: 1px;
+        color: $color-pink-1;
+    }
+
+    textarea {
+        border: transparent;
+        width: 100%;
+        margin-left: 5px;
+
+        &:focus {
+            background-color: white;
+            outline: none !important;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+header {
+    .top {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        left: 50%;
+        z-index: 100;
+        transform: translateX(-50%);
+        border-bottom: 2px solid rgba(231, 231, 231, 0.18);
+        background-color: transparent;
+    }
+
+    .teemtop {
+        padding: 0px;
+        background-color: white;
+        height: 80px;
+        border-bottom: none;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+        z-index: 100;
+    }
+
+    .active::after {
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: #b61984;
+        display: block;
+        border-radius: 50%;
+        transform: translateX(23px) translateY(10px);
+    }
+
+
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+
+        @include styleText($color-dark-1, $fs-1, $fw-1);
+    }
+
+    .navbar-nav a:hover {
+        text-decoration: none;
+        color: #b61984 !important;
+
+    }
+
+    .nav-link {
+        a {
+
+            padding-left: 20px;
+            @include styleText($color-dark-1, $fs-1, $fw-1);
+
+        }
+
+    }
+
+    .collapse {
+        
+
+        .btnlienhe {
+
+            a {
+                @include styleText($color-white-1, $fs-1, $fw-2);
+
+                &:hover {
+                    text-decoration: none;
+                    color: #b61984;
+                }
+            }
+
+        }
+
+        .btnnetwort {
+            font-size: $fs-3;
+            padding-left: 20px;
+            @extend .nav-link;
+
+            a:hover {
+                text-decoration: none;
+                color: #b61984;
+            }
+        }
+
+    }
+
+}
+
+//reponsive
+@include responsive("large") {
+    header {
+        .navbar-toggler {
+
+            &:hover {
+                color: #b61984;
+            }
+
+
+        }
+
+        .btnlienhe,
+        .btnnetwort {
+            display: none;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .navbar {
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            height: 50px;
+        }
+
+        .navbar-toggler {
+            background-color: transparent;
+            color: #181818;
+        }
+
+        .nav-link {
+            text-align: center;
+            background-color: white;
+            width: 100%;
+        }
+
+        
+
+
+    }
+
+
+}

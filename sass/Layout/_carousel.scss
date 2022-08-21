@@ -1,0 +1,58 @@
+.carosel-unity {
+    width: 100%;
+    padding: 50px 0 40px;
+    position: relative;
+
+    .container {
+        width: 100%;
+        padding: 0 29px;
+        top: 21px;
+        z-index: 3;
+    }
+
+    .caroseltop {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: 99%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .caroselduoi {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+    }
+    .carosel_left {
+        width: 55%;
+        padding: 18% 0 15% 0;
+        .title-carosel {
+
+            h3 {
+
+                @include styleText($color-pink-1, $fs-2, $fw-2);
+            }
+
+            h2 {
+                font-weight: 700;
+                position: relative;
+                font-size: 4.3rem;
+            }
+
+    
+        }
+
+    }
+
+}
